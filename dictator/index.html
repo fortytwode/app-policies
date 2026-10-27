@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dictator Privacy Policy</title>
+  <style>body{font-family:system-ui,sans-serif;line-height:1.65;max-width:48rem;margin:0 auto;padding:2rem 1.25rem;color:#202124}a{overflow-wrap:anywhere}h2{margin-top:2rem}</style>
+</head>
+<body>
+<main>
+  <p>Last updated: 27 October 2026</p>
+  <h1>Dictator Privacy Policy</h1>
+  <p>Dictator is a voice dictation keyboard for iPhone, provided by Rocketship HQ OÜ. Dictator does not require an account. It has no advertising or analytics service. This policy explains the information the app uses and when it leaves your device.</p>
+
+  <h2>Microphone and dictation</h2>
+  <p>When you start a dictation session, Dictator keeps the microphone available while the session is active so its keyboard can begin dictation while you are using another app. iOS shows its microphone indicator during this time. Between dictations, the app keeps a short audio pre-roll of up to about 0.35 seconds in memory to avoid cutting off the first syllable. Audio buffers are sent to the selected speech recognizer only while a dictation is in progress. Dictator does not write microphone audio to disk.</p>
+  <p>With Apple speech recognition, speech is processed by Apple's on-device speech services. You may optionally choose a Whisper speech model; that model is downloaded from Hugging Face/Argmax to your device and speech is then processed on the device. The app does not send recorded audio to Rocketship HQ or Anthropic.</p>
+
+  <h2>Optional Anthropic cleanup</h2>
+  <p>AI cleanup can use Apple Intelligence on device. Claude cleanup is optional and requires both an Anthropic API key and a separate permission in Dictator Settings. Unless you enable <strong>Allow sending dictation to Anthropic</strong>, Claude is not used, including when an older saved setting selects Claude.</p>
+  <p>When that permission is enabled and Claude cleanup is selected, Dictator sends Anthropic the dictated transcript, up to 500 characters of surrounding text from the keyboard field (up to 250 characters before and after the cursor), and relevant spelling hints. Spelling hints can include your saved dictionary terms and your name. The selected text is not included in the cleanup prompt. Audio is not sent. Anthropic processes the request under its own terms and privacy practices. Turning permission off prevents future Claude requests; it cannot recall information already sent.</p>
+  <p>You can remove your Anthropic API key in Dictator Settings. Dictator stores the key in the iOS Keychain. If Claude is unavailable, cleanup falls back to Apple Intelligence when available, then basic on-device cleanup.</p>
+
+  <h2>Information stored on your iPhone</h2>
+  <p>Dictator stores settings, your optional name, dictionary entries, text snippets, and keyboard communication files in the app's shared iOS App Group so the app and keyboard can work together. Dictation history is stored in the app's private local database. You choose whether history is kept forever, for 30 days, for 7 days, or not saved. You can delete individual history items or clear all history from the History screen. Removing the app removes its local app data. Model downloads can be deleted in Settings.</p>
+  <p>These local files are not sent to Rocketship HQ. Dictionary spelling hints and the name may be included in the Claude request only when Claude content permission is enabled, as described above. Dictator does not create an account or collect usage analytics.</p>
+
+  <h2>Children</h2>
+  <p>Dictator is a general-purpose keyboard and is not designed specifically for children.</p>
+
+  <h2>Contact and changes</h2>
+  <p>For privacy questions, email <a href="mailto:hi@rocketshiphq.com">hi@rocketshiphq.com</a>. We will update this page if Dictator's data practices change.</p>
+  <p><a href="support/">Dictator Support</a></p>
+</main>
+</body>
+</html>
